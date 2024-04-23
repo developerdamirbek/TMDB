@@ -26,7 +26,7 @@ export const Header = () => {
             submenu: [
                 { id: nanoid(), name: "Popular", path: "/tv" },
                 { id: nanoid(), name: "Airing Today", path: "/tv/airing-today" },
-                { id: nanoid(), name: "On TV", path: "/tv/on-tv" },
+                { id: nanoid(), name: "On TV", path: "/tv/on-the-air" },
                 { id: nanoid(), name: "Top Rated", path: "/tv/top-rated" },
             ]
         },

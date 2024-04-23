@@ -1,10 +1,10 @@
 import { useQuery } from "@tanstack/react-query";
 import request, { API_KEY } from "../../../config/request";
 
-export const useGetAiringToday = (page: number = 1) => {
+export const useGetPerson = (page: number = 1) => {
     return useQuery({
-        queryKey: ['airing-today', page],
-        queryFn: () => request.get(`/tv/airing_today`, {
+        queryKey: ['person', page],
+        queryFn: () => request.get(`/person/popular`, {
             params: {
                 api_key: API_KEY,
                 page: page

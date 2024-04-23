@@ -1,4 +1,4 @@
-import { Card, Pagination, PaginationProps, Spin } from 'antd';
+import { Card, Pagination, PaginationProps, Spin, Typography } from 'antd';
 import Meta from 'antd/es/card/Meta';
 import { useGetTvTopRated } from './service/useGetTvTopRated';
 import { useEffect, useState } from 'react';
@@ -21,10 +21,12 @@ export const TvTopRated = () => {
         });
     }, []);
 
-    return isLoading ? <div style={{ width: "100%", display: "flex", justifyContent: "center", alignItems: "center" }}><Spin /></div> : (
+    return isLoading ? <div style={{ width: "100%", display: "flex", marginTop: 150, justifyContent: "center", alignItems: "center" }}><Spin /></div> : (
         <section style={{ paddingTop: 140, paddingBottom: 30 }}>
 
             <div className='container'>
+            <Typography.Title style={{marginBottom: 40}} level={2}>Top Rated TV Shows</Typography.Title>
+
                 <div style={{ display: 'flex', marginTop: 20, flexWrap: 'wrap', justifyContent: 'center', gap: 20 }}>
                     {data?.data.results.map((item: { poster_path: string, id: string, title: string, release_date: string }) => {
                         const releaseDate = new Date(item.release_date);

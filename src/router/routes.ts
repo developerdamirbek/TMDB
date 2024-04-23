@@ -10,6 +10,7 @@ import { AiringToday } from "../pages/airing-today/airing-today";
 import { OnTv } from "../pages/on-tv/on-tv";
 import { TvTopRated } from "../pages/tv-top-rated/tv-top-rated";
 import { MovieDetail } from "../pages/movie-detail/movie-detail";
+import { TvDetail } from "../pages/tv-detail/tv-detail";
 
 export const routes = [
     {
@@ -30,6 +31,11 @@ export const routes = [
         id: nanoid(),
         component: TVShows,
         path: '/tv'
+    },
+    {
+        id: nanoid(),
+        component: TvDetail,
+        path: '/tv/:id'
     },
     {
         id: nanoid(),
@@ -59,7 +65,7 @@ export const routes = [
     {
         id: nanoid(),
         component: OnTv,
-        path: '/tv/on-tv'
+        path: '/tv/on-the-air'
     },
     {
         id: nanoid(),
