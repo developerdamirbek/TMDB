@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import { useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import { useGetSingleMovie } from '../movie/service/useGetSingleMovie';
 import { Button, Card, Progress, Space, Spin, Typography } from 'antd';

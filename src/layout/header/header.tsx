@@ -1,11 +1,10 @@
-import { Space, Menu, Button, Modal, Badge, Drawer, DrawerProps } from "antd";
+import { Space, Menu, Button, Modal, Badge, Drawer } from "antd";
 import { Link, useNavigate } from "react-router-dom";
 import logo from '../../assets/images/logo.svg';
 import './style.scss';
 import { nanoid } from "nanoid";
 import { HeartOutlined, MenuFoldOutlined, SaveOutlined, SearchOutlined } from "@ant-design/icons";
 import { useState } from "react";
-import Search from "antd/es/input/Search";
 import useLikedItems from "../../store/likedStore";
 import useSavedItems from "../../store/savedStore";
 import { Searchbox } from "../../components/searchbox";

@@ -1,4 +1,3 @@
-import React from "react";
 import Slider from "react-slick";
 import { useGetTrending } from "./service/useGetTrending";
 import './style.scss'
@@ -8,7 +7,7 @@ import Meta from "antd/es/card/Meta";
 
 export const Trending = () => {
 
-    const { data, isLoading } = useGetTrending();
+    const { data } = useGetTrending();
     console.log(data);
 
     const settings = {

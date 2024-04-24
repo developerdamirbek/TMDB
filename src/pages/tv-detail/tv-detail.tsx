@@ -6,8 +6,6 @@ import { Button, Card, Progress, Space, Spin, Tooltip, Typography } from 'antd';
 
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import useLikedItems from '../../store/likedStore';
-import useSavedItems from '../../store/savedStore';
 import { HeartOutlined, SaveOutlined } from '@ant-design/icons';
 
 export const TvDetail = () => {
