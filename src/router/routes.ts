@@ -11,6 +11,8 @@ import { OnTv } from "../pages/on-tv/on-tv";
 import { TvTopRated } from "../pages/tv-top-rated/tv-top-rated";
 import { MovieDetail } from "../pages/movie-detail/movie-detail";
 import { TvDetail } from "../pages/tv-detail/tv-detail";
+import { Liked } from "../pages/liked/liked";
+import { Saved } from "../pages/saved/saved";
 
 export const routes = [
     {
@@ -31,6 +33,16 @@ export const routes = [
         id: nanoid(),
         component: TVShows,
         path: '/tv'
+    },
+    {
+        id: nanoid(),
+        component: Liked,
+        path: '/liked'
+    },
+    {
+        id: nanoid(),
+        component: Saved,
+        path: '/saved'
     },
     {
         id: nanoid(),

@@ -7,7 +7,8 @@ export const useGetMovie = (page: number = 1) => {
         queryFn: () => request.get(`/movie/popular`, {
             params: {
                 api_key: API_KEY,
-                page: page
+                page: page,
+                
             }
         }).then((res) => {
             return {

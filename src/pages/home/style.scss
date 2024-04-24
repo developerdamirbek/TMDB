@@ -1,0 +1,20 @@
+.hero {
+    background-image: url(../../assets/images/bg.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    min-height: 450px;
+    height: 100%;
+    background-position: center;
+    background-attachment: fixed;
+    padding-top: 100px;
+    padding-bottom: 30px;
+}
+
+.search_input {
+    max-width: 100%;
+}
+
+.search_block {
+    position: relative;
+}

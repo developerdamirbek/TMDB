@@ -24,3 +24,13 @@
     background-size: cover;
     background-position: center;
 }
+
+@media screen and (max-width: 690px) {
+    .card {
+        width: 200px;
+        height: 400px;
+    }
+    .typography {
+        font-size: 20px;
+    } 
+}

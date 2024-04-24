@@ -22,3 +22,28 @@
 .ant-menu-title-content {
     color: #fff;
 }
+
+.navigation {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menu_btn {
+    display: none;
+}
+
+@media screen and (max-width: 610px) {
+    .menus {
+        display: none;
+    }
+    .menu_btn {
+        display: block;
+    }
+}
+
+.drawer {
+    background-color: #032541;
+    position: relative;
+}
